@@ -1,0 +1,48 @@
+@media (max-width: 450px) {
+  /* line 11, ../../sass/partials/_ui.scss */
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 450px) {
+  /* line 17, ../../sass/partials/_ui.scss */
+  .mobile {
+    display: none;
+  }
+}
+/* line 22, ../../sass/partials/_ui.scss */
+a {
+  text-decoration: none;
+  color: #b88f2f;
+}
+
+/* line 27, ../../sass/partials/_ui.scss */
+button {
+  padding: 8px;
+  background: #b88f2f;
+  color: white;
+}
+
+/* line 33, ../../sass/partials/_ui.scss */
+input,
+textarea {
+  background: #000000;
+}
+
+/* line 4, ../../sass/components/hero.scss */
+.hero {
+  height: 30vh;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 450px) {
+  /* line 4, ../../sass/components/hero.scss */
+  .hero {
+    height: 50vh;
+  }
+}

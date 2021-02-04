@@ -1,0 +1,304 @@
+@media (max-width: 450px) {
+  /* line 11, ../../sass/partials/_ui.scss */
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 450px) {
+  /* line 17, ../../sass/partials/_ui.scss */
+  .mobile {
+    display: none;
+  }
+}
+/* line 22, ../../sass/partials/_ui.scss */
+a {
+  text-decoration: none;
+  color: #b88f2f;
+}
+
+/* line 27, ../../sass/partials/_ui.scss */
+button {
+  padding: 8px;
+  background: #b88f2f;
+  color: white;
+}
+
+/* line 33, ../../sass/partials/_ui.scss */
+input,
+textarea {
+  background: #000000;
+}
+
+/* line 1, ../../sass/partials/_typography.scss */
+h1,
+h2,
+h3 {
+  color: white;
+  font-weight: 600;
+}
+
+/* line 8, ../../sass/partials/_typography.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 12, ../../sass/partials/_typography.scss */
+h2 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+/* line 17, ../../sass/partials/_typography.scss */
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* line 24, ../../sass/partials/_typography.scss */
+h4 {
+  color: white;
+  font-size: 32px;
+}
+
+/* line 29, ../../sass/partials/_typography.scss */
+p {
+  line-height: 1.5em;
+  max-width: 720px;
+}
+
+/* line 5, ../../sass/components/global.scss */
+body {
+  background: #000000;
+  color: #acacac;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  background-image: url("../../style/images/HeroImg2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 100px;
+}
+
+/* line 16, ../../sass/components/global.scss */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000000;
+}
+/* line 25, ../../sass/components/global.scss */
+header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 31, ../../sass/components/global.scss */
+header .logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-right: 16px;
+  color: white;
+}
+/* line 40, ../../sass/components/global.scss */
+header .site-menu {
+  color: #b88f2f;
+  white-space: nowrap;
+  position: relative;
+}
+/* line 44, ../../sass/components/global.scss */
+header .site-menu li {
+  display: inline;
+  margin: 0 8px;
+  white-space: nowrap;
+}
+/* line 48, ../../sass/components/global.scss */
+header .site-menu li a {
+  color: #b88f2f;
+}
+/* line 54, ../../sass/components/global.scss */
+header li.work-with-us {
+  font-size: 20px;
+  background: #b88f2f;
+  padding: 8px 16px;
+}
+/* line 58, ../../sass/components/global.scss */
+header li.work-with-us a {
+  color: white;
+}
+
+/* line 64, ../../sass/components/global.scss */
+section {
+  padding: 32px;
+}
+
+/* line 68, ../../sass/components/global.scss */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 4, ../../sass/components/hero.scss */
+.hero {
+  height: 30vh;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 450px) {
+  /* line 4, ../../sass/components/hero.scss */
+  .hero {
+    height: 50vh;
+  }
+}
+
+/* line 5, ../../sass/components/services.scss */
+.services .service-list {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 9, ../../sass/components/services.scss */
+.services .service-list > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+}
+/* line 16, ../../sass/components/services.scss */
+.services .service-list > li .description p {
+  margin-bottom: 16px;
+}
+/* line 19, ../../sass/components/services.scss */
+.services .service-list > li .description a {
+  margin-left: 8px;
+}
+@media (max-width: 450px) {
+  /* line 9, ../../sass/components/services.scss */
+  .services .service-list > li {
+    margin-bottom: 40px;
+  }
+  /* line 26, ../../sass/components/services.scss */
+  .services .service-list > li .column {
+    margin-bottom: 32px;
+  }
+  /* line 29, ../../sass/components/services.scss */
+  .services .service-list > li .column.links {
+    flex: 1 0;
+  }
+}
+@media (min-width: 450px) {
+  /* line 9, ../../sass/components/services.scss */
+  .services .service-list > li {
+    flex-direction: row;
+    margin-bottom: 96px;
+  }
+  /* line 39, ../../sass/components/services.scss */
+  .services .service-list > li .column:first-child {
+    margin-right: 8px;
+  }
+  /* line 42, ../../sass/components/services.scss */
+  .services .service-list > li .column:last-child {
+    margin-left: 8px;
+  }
+  /* line 46, ../../sass/components/services.scss */
+  .services .service-list > li .column.links {
+    flex-basis: 25%;
+    min-width: 200px;
+  }
+}
+/* line 54, ../../sass/components/services.scss */
+.services .service-list .service-links {
+  list-style: none;
+}
+/* line 56, ../../sass/components/services.scss */
+.services .service-list .service-links li {
+  margin-bottom: 24px;
+}
+
+/* line 4, ../../sass/components/contact.scss */
+.contact {
+  background: #101010;
+}
+/* line 6, ../../sass/components/contact.scss */
+.contact .container {
+  display: flex;
+}
+/* line 8, ../../sass/components/contact.scss */
+.contact .container h4 {
+  margin-bottom: 40px;
+}
+@media (max-width: 450px) {
+  /* line 11, ../../sass/components/contact.scss */
+  .contact .container .column {
+    flex-basis: 100%;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 450px) {
+  /* line 11, ../../sass/components/contact.scss */
+  .contact .container .column {
+    flex: 1 1 50%;
+  }
+  /* line 18, ../../sass/components/contact.scss */
+  .contact .container .column:nth-child(1) {
+    margin-right: 64px;
+  }
+}
+/* line 23, ../../sass/components/contact.scss */
+.contact .container form {
+  display: flex;
+  flex-direction: column;
+}
+/* line 27, ../../sass/components/contact.scss */
+.contact .container form input,
+.contact .container form textarea {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: none;
+  background: #000000;
+  color: white;
+  font-size: 19.2px;
+}
+/* line 35, ../../sass/components/contact.scss */
+.contact .container form input::placeholder,
+.contact .container form textarea::placeholder {
+  color: #acacac;
+}
+/* line 39, ../../sass/components/contact.scss */
+.contact .container form textarea {
+  height: 5em;
+  font-family: Helvetica, sans-serif;
+}
+/* line 44, ../../sass/components/contact.scss */
+.contact .container form input[type='submit'] {
+  align-self: flex-start;
+  padding: 8px 16px;
+  background: #b88f2f;
+  color: white;
+}
+/* line 51, ../../sass/components/contact.scss */
+.contact .container .actions {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+/* line 57, ../../sass/components/contact.scss */
+.contact .container .actions button {
+  margin-bottom: 16px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-right: 16px;
+}

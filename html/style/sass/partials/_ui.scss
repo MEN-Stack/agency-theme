@@ -1,0 +1,36 @@
+$mobile-width: 450px;
+$site-width: 1200px;
+
+$base: 8px;
+
+@function base($n: 1) {
+  @return $n * $base;
+}
+
+@media (max-width: $mobile-width) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .mobile {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $gold;
+}
+
+button {
+  padding: base();
+  background: $gold;
+  color: white;
+}
+
+input,
+textarea {
+  background: $black;
+}

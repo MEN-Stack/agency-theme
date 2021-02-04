@@ -1,0 +1,61 @@
+@import 'partials/colors';
+@import 'partials/ui';
+
+.services {
+  .service-list {
+    list-style: none;
+    margin-left: 0;
+
+    & > li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 0;
+
+      .description {
+        p {
+          margin-bottom: base(2);
+        }
+        a {
+          margin-left: base();
+        }
+      }
+
+      @media (max-width: $mobile-width) {
+        margin-bottom: base(5);
+        .column {
+          margin-bottom: base(4);
+
+          &.links {
+            flex: 1 0;
+          }
+        }
+      }
+
+      @media (min-width: $mobile-width) {
+        flex-direction: row;
+        margin-bottom: base(12);
+        .column {
+          &:first-child {
+            margin-right: base();
+          }
+          &:last-child {
+            margin-left: base();
+          }
+
+          &.links {
+            flex-basis: 25%;
+            min-width: 200px;
+          }
+        }
+      }
+    }
+
+    .service-links {
+      list-style: none;
+      li {
+        margin-bottom: base(3);
+      }
+    }
+  }
+}

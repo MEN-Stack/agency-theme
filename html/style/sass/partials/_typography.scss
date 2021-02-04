@@ -1,0 +1,32 @@
+h1,
+h2,
+h3 {
+  color: white;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: base(6);
+}
+
+h2 {
+  font-size: base(5);
+  margin-bottom: base(2);
+}
+
+h3 {
+  font-size: base(2.5);
+  font-weight: 600;
+  margin-bottom: base(2);
+  text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  font-size: base(4);
+}
+
+p {
+  line-height: 1.5em;
+  max-width: 720px;
+}

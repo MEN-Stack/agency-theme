@@ -1,0 +1,107 @@
+@media (max-width: 450px) {
+  /* line 11, ../../sass/partials/_ui.scss */
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 450px) {
+  /* line 17, ../../sass/partials/_ui.scss */
+  .mobile {
+    display: none;
+  }
+}
+/* line 22, ../../sass/partials/_ui.scss */
+a {
+  text-decoration: none;
+  color: #b88f2f;
+}
+
+/* line 27, ../../sass/partials/_ui.scss */
+button {
+  padding: 8px;
+  background: #b88f2f;
+  color: white;
+}
+
+/* line 33, ../../sass/partials/_ui.scss */
+input,
+textarea {
+  background: #000000;
+}
+
+/* line 4, ../../sass/components/contact.scss */
+.contact {
+  background: #101010;
+}
+/* line 6, ../../sass/components/contact.scss */
+.contact .container {
+  display: flex;
+}
+/* line 8, ../../sass/components/contact.scss */
+.contact .container h4 {
+  margin-bottom: 40px;
+}
+@media (max-width: 450px) {
+  /* line 11, ../../sass/components/contact.scss */
+  .contact .container .column {
+    flex-basis: 100%;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 450px) {
+  /* line 11, ../../sass/components/contact.scss */
+  .contact .container .column {
+    flex: 1 1 50%;
+  }
+  /* line 18, ../../sass/components/contact.scss */
+  .contact .container .column:nth-child(1) {
+    margin-right: 64px;
+  }
+}
+/* line 23, ../../sass/components/contact.scss */
+.contact .container form {
+  display: flex;
+  flex-direction: column;
+}
+/* line 27, ../../sass/components/contact.scss */
+.contact .container form input,
+.contact .container form textarea {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: none;
+  background: #000000;
+  color: white;
+  font-size: 19.2px;
+}
+/* line 35, ../../sass/components/contact.scss */
+.contact .container form input::placeholder,
+.contact .container form textarea::placeholder {
+  color: #acacac;
+}
+/* line 39, ../../sass/components/contact.scss */
+.contact .container form textarea {
+  height: 5em;
+  font-family: Helvetica, sans-serif;
+}
+/* line 44, ../../sass/components/contact.scss */
+.contact .container form input[type='submit'] {
+  align-self: flex-start;
+  padding: 8px 16px;
+  background: #b88f2f;
+  color: white;
+}
+/* line 51, ../../sass/components/contact.scss */
+.contact .container .actions {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+/* line 57, ../../sass/components/contact.scss */
+.contact .container .actions button {
+  margin-bottom: 16px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-right: 16px;
+}

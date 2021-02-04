@@ -1,0 +1,76 @@
+@import 'partials/colors';
+@import 'partials/ui';
+@import 'partials/typography';
+
+body {
+  background: $black;
+  color: $bodygray;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  background-image: url('../../style/images/HeroImg2.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: base(12.5);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: base(4) 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $black;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: base(4);
+    letter-spacing: 1px;
+    margin-right: base(2);
+    color: white;
+  }
+
+  .site-menu {
+    color: $gold;
+    white-space: nowrap;
+    position: relative;
+    li {
+      display: inline;
+      margin: 0 8px;
+      white-space: nowrap;
+      a {
+        color: $gold;
+      }
+    }
+  }
+
+  li.work-with-us {
+    font-size: base(2.5);
+    background: $gold;
+    padding: base() base(2);
+    a {
+      color: white;
+    }
+  }
+}
+
+section {
+  padding: base(4);
+}
+
+.container {
+  max-width: $site-width;
+  width: 100%;
+  margin: auto;
+}
+
+@import 'components/hero';
+@import 'components/services';
+@import 'components/contact';

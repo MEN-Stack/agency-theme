@@ -1,0 +1,17 @@
+@import '../partials/colors';
+@import '../partials/ui';
+
+.hero {
+  height: 30vh;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $mobile-width) {
+    height: 50vh;
+  }
+}

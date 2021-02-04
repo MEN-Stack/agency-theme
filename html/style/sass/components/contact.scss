@@ -1,0 +1,66 @@
+@import 'partials/colors';
+@import 'partials/ui';
+
+.contact {
+  background: #101010;
+  .container {
+    display: flex;
+    h4 {
+      margin-bottom: base(5);
+    }
+    .column {
+      @media (max-width: $mobile-width) {
+        flex-basis: 100%;
+        margin-bottom: base(4);
+      }
+      @media (min-width: $mobile-width) {
+        flex: 1 1 50%;
+        &:nth-child(1) {
+          margin-right: base(8);
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        margin-bottom: base();
+        padding: base();
+        border: none;
+        background: $black;
+        color: white;
+        font-size: base(2.4);
+        &::placeholder {
+          color: $bodygray;
+        }
+      }
+      textarea {
+        height: 5em;
+        font-family: Helvetica, sans-serif;
+      }
+
+      input[type='submit'] {
+        align-self: flex-start;
+        padding: base() base(2);
+        background: $gold;
+        color: white;
+      }
+    }
+    .actions {
+      margin-top: base(2);
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      button {
+        margin-bottom: base(2);
+        border: none;
+        padding: base() base(2);
+        font-size: base(2);
+        margin-right: base(2);
+      }
+    }
+  }
+}
